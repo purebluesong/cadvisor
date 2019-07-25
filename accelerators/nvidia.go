@@ -26,7 +26,7 @@ import (
 
 	info "github.com/google/cadvisor/info/v1"
 
-	"github.com/mindprince/gonvml"
+	"github.com/purebluesong/gonvml"
 	"k8s.io/klog"
 )
 
@@ -234,6 +234,21 @@ func (nc *NvidiaCollector) UpdateStats(stats *info.ContainerStats) error {
 			return fmt.Errorf("error while getting gpu utilization: %v", err)
 		}
 
+		// TODO: Use housekeeping process buffer
+		processUtilizations, err := device.ProcessUtilization(20, 10*time.Second)
+		if err != nil {
+			return fmt.Errorf("error while getting gpu process utilization: %v", err)
+		}
+
+		processesStats := make([]*info.AcceleratorProcessUtilization, len(processUtilizations))
+		for index, sample := range processUtilizations {
+			processesStats[index] = &info.AcceleratorProcessUtilization{
+				Pid:     sample.Pid,
+				SMUtil:  sample.SMUtil,
+				MemUtil: sample.MemUtil,
+			}
+		}
+
 		stats.Accelerators = append(stats.Accelerators, info.AcceleratorStats{
 			Make:        "nvidia",
 			Model:       model,
@@ -241,6 +256,7 @@ func (nc *NvidiaCollector) UpdateStats(stats *info.ContainerStats) error {
 			MemoryTotal: memoryTotal,
 			MemoryUsed:  memoryUsed,
 			DutyCycle:   uint64(utilizationGPU),
+			Processes:   processesStats,
 		})
 	}
 	return nil

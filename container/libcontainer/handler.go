@@ -181,8 +181,17 @@ func processStatsFromProcs(rootFs string, cgroupPath string) (info.ProcessStats,
 		}
 	}
 
+	uintpids := make([]uint, len(pids))
+	for index, pid := range pids {
+		uintpid, err := strconv.Atoi(pid)
+		if err != nil {
+			uintpids[index] = uint(uintpid)
+		}
+	}
+
 	processStats := info.ProcessStats{
 		ProcessCount: uint64(len(pids)),
+		Pids:         uintpids,
 		FdCount:      fdCount,
 		SocketCount:  socketCount,
 	}

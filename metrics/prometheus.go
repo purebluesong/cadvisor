@@ -465,6 +465,93 @@ func NewPrometheusCollector(i infoProvider, f ContainerLabelsFunc, includedMetri
 					}
 					return values
 				},
+			}, {
+				name:        "container_accelerator_memory_limit_bytes",
+				help:        "Total accelerator limit memory.",
+				valueType:   prometheus.GaugeValue,
+				extraLabels: []string{"make", "model", "acc_id"},
+				getValues: func(s *info.ContainerStats) metricValues {
+					values := make(metricValues, 0, len(s.Accelerators))
+
+					pids := make(map[uint]bool, len(s.Processes.Pids))
+					for _, pid := range s.Processes.Pids {
+						pids[pid] = true
+					}
+					// TODO: change to memory limit spec
+					for _, accelerator := range s.Accelerators {
+						exist := false
+						for _, process := range accelerator.Processes {
+							_, ok := pids[process.Pid]
+							if ok {
+								exist = true
+							}
+						}
+						if exist {
+							values = append(values, metricValue{
+								value:     float64(accelerator.MemoryTotal),
+								labels:    []string{accelerator.Make, accelerator.Model, accelerator.ID},
+								timestamp: s.Timestamp,
+							})
+						}
+					}
+					return values
+				},
+			}, {
+				name:        "container_accelerator_memory_actual_used_bytes",
+				help:        "Total accelerator memory allocated.",
+				valueType:   prometheus.GaugeValue,
+				extraLabels: []string{"make", "model", "acc_id"},
+				getValues: func(s *info.ContainerStats) metricValues {
+					values := make(metricValues, 0, len(s.Accelerators))
+					pids := make(map[uint]bool, len(s.Processes.Pids))
+					for _, pid := range s.Processes.Pids {
+						pids[pid] = true
+					}
+
+					for _, accelerator := range s.Accelerators {
+						value := float64(0)
+						for _, process := range accelerator.Processes {
+							_, ok := pids[process.Pid]
+							if ok {
+								value = value + float64(accelerator.MemoryTotal)*float64(process.MemUtil)/100
+							}
+						}
+						values = append(values, metricValue{
+							value:     value,
+							labels:    []string{accelerator.Make, accelerator.Model, accelerator.ID},
+							timestamp: s.Timestamp,
+						})
+					}
+					return values
+				},
+			}, {
+				name:        "container_accelerator_sm_utilization",
+				help:        "Percent of time over the past sample period during which the accelerator was actively processing.",
+				valueType:   prometheus.GaugeValue,
+				extraLabels: []string{"make", "model", "acc_id"},
+				getValues: func(s *info.ContainerStats) metricValues {
+					values := make(metricValues, 0, len(s.Accelerators))
+					pids := make(map[uint]bool, len(s.Processes.Pids))
+					for _, pid := range s.Processes.Pids {
+						pids[pid] = true
+					}
+
+					for _, accelerator := range s.Accelerators {
+						var value uint
+						for _, process := range accelerator.Processes {
+							_, ok := pids[process.Pid]
+							if ok {
+								value = value + process.SMUtil
+							}
+						}
+						values = append(values, metricValue{
+							value:     float64(value),
+							labels:    []string{accelerator.Make, accelerator.Model, accelerator.ID},
+							timestamp: s.Timestamp,
+						})
+					}
+					return values
+				},
 			},
 		}...)
 	}
