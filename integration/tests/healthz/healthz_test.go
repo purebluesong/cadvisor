@@ -19,7 +19,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/google/cadvisor/integration/framework"
+	"gitlab.aibee.cn/rpzhang/cadvisor/integration/framework"
 )
 
 func TestHealthzOk(t *testing.T) {

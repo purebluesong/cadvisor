@@ -23,20 +23,20 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/cadvisor/cache/memory"
-	"github.com/google/cadvisor/collector"
-	"github.com/google/cadvisor/container"
-	"github.com/google/cadvisor/container/docker"
-	containertest "github.com/google/cadvisor/container/testing"
-	info "github.com/google/cadvisor/info/v1"
-	itest "github.com/google/cadvisor/info/v1/test"
-	"github.com/google/cadvisor/info/v2"
-	"github.com/google/cadvisor/utils/sysfs/fakesysfs"
+	"gitlab.aibee.cn/rpzhang/cadvisor/cache/memory"
+	"gitlab.aibee.cn/rpzhang/cadvisor/collector"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container/docker"
+	containertest "gitlab.aibee.cn/rpzhang/cadvisor/container/testing"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
+	itest "gitlab.aibee.cn/rpzhang/cadvisor/info/v1/test"
+	"gitlab.aibee.cn/rpzhang/cadvisor/info/v2"
+	"gitlab.aibee.cn/rpzhang/cadvisor/utils/sysfs/fakesysfs"
 
 	"github.com/stretchr/testify/assert"
 	clock "k8s.io/utils/clock/testing"
 
-	_ "github.com/google/cadvisor/container/install"
+	_ "gitlab.aibee.cn/rpzhang/cadvisor/container/install"
 )
 
 // TODO(vmarmol): Refactor these tests.

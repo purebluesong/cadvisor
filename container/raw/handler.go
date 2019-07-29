@@ -18,12 +18,12 @@ package raw
 import (
 	"fmt"
 
-	"github.com/google/cadvisor/container"
-	"github.com/google/cadvisor/container/common"
-	"github.com/google/cadvisor/container/libcontainer"
-	"github.com/google/cadvisor/fs"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/machine"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container/common"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container/libcontainer"
+	"gitlab.aibee.cn/rpzhang/cadvisor/fs"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/machine"
 
 	cgroupfs "github.com/opencontainers/runc/libcontainer/cgroups/fs"
 	"github.com/opencontainers/runc/libcontainer/configs"

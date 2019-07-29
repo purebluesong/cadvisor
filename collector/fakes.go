@@ -17,7 +17,7 @@ package collector
 import (
 	"time"
 
-	"github.com/google/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
 )
 
 type FakeCollectorManager struct {

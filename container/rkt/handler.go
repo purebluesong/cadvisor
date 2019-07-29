@@ -20,11 +20,11 @@ import (
 	"os"
 
 	rktapi "github.com/coreos/rkt/api/v1alpha"
-	"github.com/google/cadvisor/container"
-	"github.com/google/cadvisor/container/common"
-	"github.com/google/cadvisor/container/libcontainer"
-	"github.com/google/cadvisor/fs"
-	info "github.com/google/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container/common"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container/libcontainer"
+	"gitlab.aibee.cn/rpzhang/cadvisor/fs"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
 	"golang.org/x/net/context"
 
 	cgroupfs "github.com/opencontainers/runc/libcontainer/cgroups/fs"

@@ -25,9 +25,9 @@ import (
 	"strings"
 	"time"
 
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/storage"
-	"github.com/google/cadvisor/utils/container"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/storage"
+	"gitlab.aibee.cn/rpzhang/cadvisor/utils/container"
 
 	kafka "github.com/Shopify/sarama"
 	"k8s.io/klog"

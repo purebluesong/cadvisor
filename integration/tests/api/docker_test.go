@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/info/v2"
-	"github.com/google/cadvisor/integration/framework"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/info/v2"
+	"gitlab.aibee.cn/rpzhang/cadvisor/integration/framework"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

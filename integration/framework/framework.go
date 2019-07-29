@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/cadvisor/client"
-	"github.com/google/cadvisor/client/v2"
+	"gitlab.aibee.cn/rpzhang/cadvisor/client"
+	"gitlab.aibee.cn/rpzhang/cadvisor/client/v2"
 	"k8s.io/klog"
 )
 

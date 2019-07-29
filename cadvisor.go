@@ -27,20 +27,20 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/google/cadvisor/container"
-	cadvisorhttp "github.com/google/cadvisor/http"
-	"github.com/google/cadvisor/manager"
-	"github.com/google/cadvisor/metrics"
-	"github.com/google/cadvisor/utils/sysfs"
-	"github.com/google/cadvisor/version"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container"
+	cadvisorhttp "gitlab.aibee.cn/rpzhang/cadvisor/http"
+	"gitlab.aibee.cn/rpzhang/cadvisor/manager"
+	"gitlab.aibee.cn/rpzhang/cadvisor/metrics"
+	"gitlab.aibee.cn/rpzhang/cadvisor/utils/sysfs"
+	"gitlab.aibee.cn/rpzhang/cadvisor/version"
 
 	// Register container providers
-	_ "github.com/google/cadvisor/container/install"
+	_ "gitlab.aibee.cn/rpzhang/cadvisor/container/install"
 
 	// Register CloudProviders
-	_ "github.com/google/cadvisor/utils/cloudinfo/aws"
-	_ "github.com/google/cadvisor/utils/cloudinfo/azure"
-	_ "github.com/google/cadvisor/utils/cloudinfo/gce"
+	_ "gitlab.aibee.cn/rpzhang/cadvisor/utils/cloudinfo/aws"
+	_ "gitlab.aibee.cn/rpzhang/cadvisor/utils/cloudinfo/azure"
+	_ "gitlab.aibee.cn/rpzhang/cadvisor/utils/cloudinfo/gce"
 
 	"k8s.io/klog"
 )

@@ -15,10 +15,10 @@
 package crio
 
 import (
-	"github.com/google/cadvisor/container"
-	"github.com/google/cadvisor/fs"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/watcher"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container"
+	"gitlab.aibee.cn/rpzhang/cadvisor/fs"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/watcher"
 	"k8s.io/klog"
 )
 

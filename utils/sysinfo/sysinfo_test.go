@@ -17,9 +17,9 @@ package sysinfo
 import (
 	"testing"
 
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/utils/sysfs"
-	"github.com/google/cadvisor/utils/sysfs/fakesysfs"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/utils/sysfs"
+	"gitlab.aibee.cn/rpzhang/cadvisor/utils/sysfs/fakesysfs"
 )
 
 func TestGetBlockDeviceInfo(t *testing.T) {

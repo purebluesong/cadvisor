@@ -23,9 +23,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/cadvisor/container"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/utils"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/utils"
 	"github.com/karrick/godirwalk"
 	"github.com/pkg/errors"
 

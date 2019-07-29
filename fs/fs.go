@@ -31,9 +31,9 @@ import (
 	"syscall"
 
 	"github.com/docker/docker/pkg/mount"
-	"github.com/google/cadvisor/devicemapper"
-	"github.com/google/cadvisor/utils"
-	dockerutil "github.com/google/cadvisor/utils/docker"
+	"gitlab.aibee.cn/rpzhang/cadvisor/devicemapper"
+	"gitlab.aibee.cn/rpzhang/cadvisor/utils"
+	dockerutil "gitlab.aibee.cn/rpzhang/cadvisor/utils/docker"
 	zfs "github.com/mistifyio/go-zfs"
 	"k8s.io/klog"
 )

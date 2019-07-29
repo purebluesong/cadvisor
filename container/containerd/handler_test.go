@@ -20,10 +20,10 @@ import (
 
 	"github.com/containerd/containerd/containers"
 	"github.com/containerd/typeurl"
-	"github.com/google/cadvisor/container"
-	containerlibcontainer "github.com/google/cadvisor/container/libcontainer"
-	"github.com/google/cadvisor/fs"
-	info "github.com/google/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container"
+	containerlibcontainer "gitlab.aibee.cn/rpzhang/cadvisor/container/libcontainer"
+	"gitlab.aibee.cn/rpzhang/cadvisor/fs"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/stretchr/testify/assert"
 )

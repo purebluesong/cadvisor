@@ -28,7 +28,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/google/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
 
 	"k8s.io/klog"
 	"time"

@@ -13,7 +13,7 @@
 // limitations under the License.
 package accelerators
 
-import info "github.com/google/cadvisor/info/v1"
+import info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
 
 // This is supposed to store global state about an accelerator metrics collector.
 // cadvisor manager will call Setup() when it starts and Destroy() when it stops.

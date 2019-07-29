@@ -19,8 +19,8 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/google/cadvisor/container"
-	info "github.com/google/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
 	"github.com/prometheus/client_golang/prometheus"
 	"k8s.io/klog"
 )

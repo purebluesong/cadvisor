@@ -16,8 +16,8 @@
 package install
 
 import (
-	"github.com/google/cadvisor/container"
-	"github.com/google/cadvisor/container/rkt"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container/rkt"
 	"k8s.io/klog"
 )
 

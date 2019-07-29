@@ -26,9 +26,9 @@ import (
 	"path"
 	"strings"
 
-	"github.com/google/cadvisor/container/docker"
-	"github.com/google/cadvisor/manager"
-	"github.com/google/cadvisor/utils"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container/docker"
+	"gitlab.aibee.cn/rpzhang/cadvisor/manager"
+	"gitlab.aibee.cn/rpzhang/cadvisor/utils"
 
 	"github.com/opencontainers/runc/libcontainer/cgroups"
 )

@@ -20,8 +20,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/google/cadvisor/events"
-	info "github.com/google/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/events"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
 
 	"github.com/stretchr/testify/assert"
 )

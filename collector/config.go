@@ -18,7 +18,7 @@ import (
 	"time"
 
 	"encoding/json"
-	"github.com/google/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
 )
 
 type Config struct {

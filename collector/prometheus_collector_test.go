@@ -21,9 +21,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/google/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
 
-	containertest "github.com/google/cadvisor/container/testing"
+	containertest "gitlab.aibee.cn/rpzhang/cadvisor/container/testing"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

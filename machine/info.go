@@ -24,11 +24,11 @@ import (
 	"strings"
 
 	"github.com/docker/docker/pkg/parsers/operatingsystem"
-	"github.com/google/cadvisor/fs"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/utils/cloudinfo"
-	"github.com/google/cadvisor/utils/sysfs"
-	"github.com/google/cadvisor/utils/sysinfo"
+	"gitlab.aibee.cn/rpzhang/cadvisor/fs"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/utils/cloudinfo"
+	"gitlab.aibee.cn/rpzhang/cadvisor/utils/sysfs"
+	"gitlab.aibee.cn/rpzhang/cadvisor/utils/sysinfo"
 
 	"k8s.io/klog"
 

@@ -21,9 +21,9 @@ import (
 	"net/url"
 	"strings"
 
-	httpmux "github.com/google/cadvisor/http/mux"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/manager"
+	httpmux "gitlab.aibee.cn/rpzhang/cadvisor/http/mux"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/manager"
 
 	auth "github.com/abbot/go-http-auth"
 	"k8s.io/klog"

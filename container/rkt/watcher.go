@@ -19,7 +19,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/google/cadvisor/watcher"
+	"gitlab.aibee.cn/rpzhang/cadvisor/watcher"
 
 	rktapi "github.com/coreos/rkt/api/v1alpha"
 	"golang.org/x/net/context"

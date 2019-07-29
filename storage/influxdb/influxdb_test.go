@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/storage"
-	"github.com/google/cadvisor/storage/test"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/storage"
+	"gitlab.aibee.cn/rpzhang/cadvisor/storage/test"
 
 	influxdb "github.com/influxdb/influxdb/client"
 	"github.com/stretchr/testify/assert"

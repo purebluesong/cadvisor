@@ -16,10 +16,10 @@
 package install
 
 import (
-	_ "github.com/google/cadvisor/container/containerd/install"
-	_ "github.com/google/cadvisor/container/crio/install"
-	_ "github.com/google/cadvisor/container/docker/install"
-	_ "github.com/google/cadvisor/container/mesos/install"
-	_ "github.com/google/cadvisor/container/rkt/install"
-	_ "github.com/google/cadvisor/container/systemd/install"
+	_ "gitlab.aibee.cn/rpzhang/cadvisor/container/containerd/install"
+	_ "gitlab.aibee.cn/rpzhang/cadvisor/container/crio/install"
+	_ "gitlab.aibee.cn/rpzhang/cadvisor/container/docker/install"
+	_ "gitlab.aibee.cn/rpzhang/cadvisor/container/mesos/install"
+	_ "gitlab.aibee.cn/rpzhang/cadvisor/container/rkt/install"
+	_ "gitlab.aibee.cn/rpzhang/cadvisor/container/systemd/install"
 )

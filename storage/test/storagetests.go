@@ -20,8 +20,8 @@ import (
 	"testing"
 	"time"
 
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/storage"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/storage"
 )
 
 type TestStorageDriver interface {

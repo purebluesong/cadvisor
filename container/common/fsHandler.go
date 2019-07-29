@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/cadvisor/fs"
+	"gitlab.aibee.cn/rpzhang/cadvisor/fs"
 
 	"k8s.io/klog"
 )

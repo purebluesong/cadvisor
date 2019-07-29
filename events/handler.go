@@ -21,8 +21,8 @@ import (
 	"sync"
 	"time"
 
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/utils"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/utils"
 
 	"k8s.io/klog"
 )

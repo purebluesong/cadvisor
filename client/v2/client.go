@@ -26,8 +26,8 @@ import (
 	"strconv"
 	"strings"
 
-	v1 "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/info/v2"
+	v1 "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/info/v2"
 )
 
 // Client represents the base URL for a cAdvisor client.

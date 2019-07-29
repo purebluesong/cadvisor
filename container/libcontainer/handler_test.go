@@ -18,7 +18,7 @@ import (
 	"os"
 	"testing"
 
-	info "github.com/google/cadvisor/info/v1"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
 	"github.com/opencontainers/runc/libcontainer/cgroups"
 	"github.com/opencontainers/runc/libcontainer/system"
 )

@@ -22,7 +22,7 @@ import (
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/stretchr/testify/assert"
 
-	containerlibcontainer "github.com/google/cadvisor/container/libcontainer"
+	containerlibcontainer "gitlab.aibee.cn/rpzhang/cadvisor/container/libcontainer"
 )
 
 func TestIsContainerName(t *testing.T) {

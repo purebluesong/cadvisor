@@ -22,11 +22,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/google/cadvisor/container"
-	"github.com/google/cadvisor/container/common"
-	containerlibcontainer "github.com/google/cadvisor/container/libcontainer"
-	"github.com/google/cadvisor/fs"
-	info "github.com/google/cadvisor/info/v1"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container"
+	"gitlab.aibee.cn/rpzhang/cadvisor/container/common"
+	containerlibcontainer "gitlab.aibee.cn/rpzhang/cadvisor/container/libcontainer"
+	"gitlab.aibee.cn/rpzhang/cadvisor/fs"
+	info "gitlab.aibee.cn/rpzhang/cadvisor/info/v1"
 
 	cgroupfs "github.com/opencontainers/runc/libcontainer/cgroups/fs"
 	libcontainerconfigs "github.com/opencontainers/runc/libcontainer/configs"
